@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export default function Button({
   children,
   className,
@@ -26,3 +28,10 @@ export default function Button({
     </button>
   );
 }
+
+Button.propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
+  mode: PropTypes.oneOf(['filled', 'outlined']), // Assuming there are only two modes: filled and outlined
+  Icon: PropTypes.elementType
+};
