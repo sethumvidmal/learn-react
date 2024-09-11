@@ -12,7 +12,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/Components/AsyncAutocomplete/AsyncAutocomplete.jsx'), // Path to your component
-      name: 'MyButtonComponent',  // Global variable name for the component
+      name: 'AsyncAutocomplete',  // Global variable name for the component
       fileName: (format) => `my-component.${format}.js`,  // Output filename
     },
     rollupOptions: {
